@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-bootstrap';
 
 import GoogleBooksImage from 'assets/googlebooks.png';
 import WorldWireImage from 'assets/worldwire.png';
@@ -18,7 +18,7 @@ function Portfolio() {
     return (
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-          <GoogleBooksImage text="Google Book Search" />
+          <img src="./assets/googlebooks.png" alt="Google Book Search"/>
           <Carousel.Caption>
             <h3>Google Book Search</h3>
             <p>Google Book Search API created using MERN stack</p>
@@ -27,7 +27,7 @@ function Portfolio() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <WorldWireImage text="Worldwire News" />
+            <img src="./assets/worldwire.png" alt="Worldwire News"/>  
           <Carousel.Caption>
             <h3>Worldwire News</h3>
             <p>News app using MERN stack, World News API, News API, and Mapbox GL</p>
@@ -36,7 +36,7 @@ function Portfolio() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <ReadMeImage text="README Generator" />
+            <img src="./assets/readme.png" alt="README Generator"/>
           <Carousel.Caption>
             <h3>README Generator</h3>
             <p>README generator app using Node.JS and NPM Inquirer package</p>
@@ -44,7 +44,7 @@ function Portfolio() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <SQLTrackerImage text="SQL Employee Tracker" />
+            <img src="./assets/sqltracker.png" alt="SQL Employee Tracker"/>
           <Carousel.Caption>
             <h3>SQL Employee Tracker</h3>
             <p>Employee tracker app using MySQL and Node.JS</p>
@@ -52,7 +52,7 @@ function Portfolio() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <JateImage text="JATE" />
+            <img src="./assets/jate.png" alt="JATE"/>
           <Carousel.Caption>
             <h3>Just Another Text Editor</h3>
             <p>Text Editor/Note Taker using Webpacks</p>
@@ -61,7 +61,7 @@ function Portfolio() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <KKIJImage text="KKIJ" />
+            <img src="./assets/kkij.png" alt="KKIJ Travels"/>
           <Carousel.Caption>
             <h3>KKIJ Travels</h3>
             <p>Travel app using TicketMaster API and GeoApify API</p>
