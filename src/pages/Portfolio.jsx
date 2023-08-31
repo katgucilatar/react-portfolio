@@ -1,12 +1,5 @@
 import { useState } from 'react';
-import Carousel from 'react-bootstrap';
-
-import GoogleBooksImage from 'assets/googlebooks.png';
-import WorldWireImage from 'assets/worldwire.png';
-import ReadMeImage from 'assets/readme.png';
-import SQLTrackerImage from 'assets/sqltracker.png';
-import JateImage from 'assets/jate.png';
-import KKIJImage from 'assets/kkij.png';
+import Carousel from 'react-bootstrap/Carousel';
 
 function Portfolio() {
     const [index, setIndex] = useState(0);
