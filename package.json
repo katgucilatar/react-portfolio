@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/loved-by-the-king": "^5.0.18",
     "@fontsource/rock-salt": "^5.0.18",
+    "animate.css": "^4.1.1",
     "framer-motion": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

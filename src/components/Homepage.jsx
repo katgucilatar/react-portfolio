@@ -2,6 +2,7 @@ import { Box, Heading, Image, VStack, Flex, Spacer, Link } from '@chakra-ui/reac
 import React, { useState } from 'react';
 import { extendTheme } from '@chakra-ui/react'
 import '@fontsource/rock-salt';
+
 const theme = extendTheme({
     textStyles: {
         h1: {
@@ -15,7 +16,7 @@ const theme = extendTheme({
   })
 
 const Homepage = () => {
-    const [isShown, setIsShown] = useState(false);
+    const [isShown, setIsShown] = useState(false);    
 
     return (
         <Box 
@@ -32,7 +33,7 @@ const Homepage = () => {
             <VStack spacing="30px">
                 <Heading 
                     position="absolute" 
-                    top="30%"
+                    top="15%"
                     left="50%" 
                     transform="translate(-50%,-50%)"
                     fontSize="5em"
@@ -47,7 +48,7 @@ const Homepage = () => {
                     <>
                     <Heading
                     position="absolute" 
-                    top="53%"
+                    top="38%"
                     left="50%" 
                     transform="translate(-50%,-50%)"
                     fontSize="2em"
@@ -57,7 +58,7 @@ const Homepage = () => {
                     textStyle="h1">Check out my interactive resume <Link color="#F41B94" textShadow="1px 1px 2px black, 0 0 10px #30A6F1, 0 0 0.2em #30A6F1">HERE</Link></Heading>
                     <Heading
                     position="absolute" 
-                    top="63%"
+                    top="48%"
                     left="50%" 
                     transform="translate(-50%,-50%)"
                     fontSize="2em"
@@ -68,7 +69,7 @@ const Homepage = () => {
                     <Heading 
                     textStyle="h1"
                     position="absolute" 
-                    bottom="15px" 
+                    bottom="17%" 
                     left="50%" 
                     transform="translate(-50%,-50%)"
                     fontSize="4em"
@@ -82,21 +83,16 @@ const Homepage = () => {
             <Flex>
                 <Image
                     width="250px"
-                    height="600px"
-                    src="./images/backgroundimage.jfif"
+                    height="100vh"
+                    src="./images/backgroundimage.png"
                     alt="colored dragon/koi fish art"
-                    transform="rotate(30deg)"
-                    boxShadow="0 0 5px 10px #DDF8ED"
-                    borderRadius="10px"
                 />
                 <Spacer />
                 <Image
                     width="250px"
-                    height="600px"
-                    src="./images/backgroundimage.jfif"
+                    height="100vh"
+                    src="./images/backgroundimage.png"
                     alt="colored dragon/koi fish art"
-                    transform="rotate(-30deg)"
-                    boxShadow="0 0 5px 10px #DDF8ED"
                 />
             </Flex>
         </Box>
