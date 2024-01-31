@@ -12,8 +12,17 @@ const Homepage = () => {
             minWidth="1024px"
             margin="0"
             padding="0"
+            position="relative"
         > 
-            <Heading position="absolute">KATRINA GUCILATAR</Heading>
+            <Stack direction="column">
+                <Heading 
+                    position="absolute" 
+                    top="30%" 
+                    left="25%" 
+                    fontSize="3em"
+                    color="#DFFAF9"
+                    textShadow="1px 1px 2px black, 0 0 10px #30A6F1, 0 0 0.2em #30A6F1" >KATRINA GUCILATAR</Heading>
+            </Stack>
             <Flex>
                 <Image
                     width="250px"
