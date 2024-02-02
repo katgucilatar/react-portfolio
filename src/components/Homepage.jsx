@@ -1,19 +1,6 @@
-import { Box, Heading, Image, VStack, Flex, Spacer, Link } from '@chakra-ui/react';
+import { Box, Heading, Image, VStack, Flex, Spacer, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import { extendTheme } from '@chakra-ui/react'
-import '@fontsource/rock-salt';
-
-const theme = extendTheme({
-    textStyles: {
-        h1: {
-            fontFamily: 'Rock Salt',
-            fontSize: '84px',
-            fontWeight: 'bold',
-            lineHeight: '90%',
-            letterSpacing: '3%'
-        }
-    },
-  })
+import 'animate.css';
 
 const Homepage = () => {
     const [isShown, setIsShown] = useState(false);    
@@ -39,35 +26,39 @@ const Homepage = () => {
                     fontSize="5em"
                     color="#DFFAF9"
                     textAlign="center"
-                    textShadow="1px 1px 2px black, 0 0 10px #30A6F1, 0 0 0.2em #30A6F1"
-                    textStyle="h1"
+                    textShadow="1px 1px 2px black, 0 0 10px #0E1A51, 0 0 0.2em #30A6F1"
+                    fontFamily="Rock Salt"
                     onMouseEnter={() => setIsShown(true)} >
                     KATRINA GUCILATAR
                 </Heading>
                 {isShown && (
                     <>
-                    <Heading
+                    <Breadcrumb
+                    fontFamily="Rock Salt"
+                    separator='-'
+                    color="white"
+                    textShadow="1px 1px 2px black, 0 0 20px #0E1A51, 0 0 0.2em #30A6F1"
                     position="absolute" 
-                    top="38%"
+                    top="42%"
                     left="50%" 
                     transform="translate(-50%,-50%)"
                     fontSize="2em"
-                    color="black"
-                    textAlign="center"
-                    textShadow="1px 1px 2px white, 0 0 10px #30A6F1, 0 0 0.2em #30A6F1"
-                    textStyle="h1">Check out my interactive resume <Link color="#F41B94" textShadow="1px 1px 2px black, 0 0 10px #30A6F1, 0 0 0.2em #30A6F1">HERE</Link></Heading>
-                    <Heading
-                    position="absolute" 
-                    top="48%"
-                    left="50%" 
-                    transform="translate(-50%,-50%)"
-                    fontSize="2em"
-                    color="black"
-                    textAlign="center"
-                    textShadow="1px 1px 2px white, 0 0 10px #30A6F1, 0 0 0.2em #30A6F1"
-                    textStyle="h1">Check out my projects <Link color="#F41B94" textShadow="1px 1px 2px black, 0 0 10px #30A6F1, 0 0 0.2em #30A6F1">HERE</Link></Heading>
+                    boxShadow="10px 10px 15px 12px #F41B94"
+                    className="animate__animated animate__zoomInDown">
+                        <BreadcrumbItem backgroundColor="#F41B94">
+                            <BreadcrumbLink href='#'>About Me</BreadcrumbLink>
+                        </BreadcrumbItem>
+
+                        <BreadcrumbItem backgroundColor="#F41B94">
+                            <BreadcrumbLink href='#'>Projects</BreadcrumbLink>
+                        </BreadcrumbItem>
+
+                        <BreadcrumbItem backgroundColor="#F41B94">
+                            <BreadcrumbLink href='#'>Resume</BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </Breadcrumb>
                     <Heading 
-                    textStyle="h1"
+                    fontFamily="Rock Salt"
                     position="absolute" 
                     bottom="17%" 
                     left="50%" 
@@ -75,7 +66,7 @@ const Homepage = () => {
                     fontSize="4em"
                     color="#DFFAF9"
                     textAlign="center"
-                    textShadow="1px 1px 2px black, 0 0 10px #30A6F1, 0 0 0.2em #30A6F1"
+                    textShadow="1px 1px 2px black, 0 0 10px #0E1A51, 0 0 0.2em #30A6F1"
                     >Full-Stack Web Developer</Heading>
                     </>
                 )}

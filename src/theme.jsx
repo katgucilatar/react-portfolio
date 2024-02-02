@@ -1,12 +1,16 @@
 import { extendTheme } from '@chakra-ui/react'
 import '@fontsource/rock-salt';
-import '@fontsource/loved-by-the-king';
 
 const theme = extendTheme({
-  fonts: {
-    heading: `'Rock Salt'`,
-    body: `'Loved By The King`,
-  },
-})
+    textStyles: {
+        h1: {
+            fontFamily: 'Rock Salt',
+            fontSize: '84px',
+            fontWeight: 'bold',
+            lineHeight: '90%',
+            letterSpacing: '3%'
+        }
+    },
+  })
 
-export default theme
+  export default theme;
