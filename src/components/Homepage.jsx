@@ -1,5 +1,6 @@
-import { Box, Heading, Image, VStack, Flex, Spacer, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
+import { Box, Heading, VStack } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import SideStyling from './SideStyling';
 import 'animate.css';
 
 const Homepage = () => {
@@ -33,30 +34,6 @@ const Homepage = () => {
                 </Heading>
                 {isShown && (
                     <>
-                    <Breadcrumb
-                    fontFamily="Rock Salt"
-                    separator='-'
-                    color="white"
-                    textShadow="1px 1px 2px black, 0 0 20px #0E1A51, 0 0 0.2em #30A6F1"
-                    position="absolute" 
-                    top="42%"
-                    left="50%" 
-                    transform="translate(-50%,-50%)"
-                    fontSize="2em"
-                    boxShadow="10px 10px 15px 12px #F41B94"
-                    className="animate__animated animate__zoomInDown">
-                        <BreadcrumbItem backgroundColor="#F41B94">
-                            <BreadcrumbLink href='#'>About Me</BreadcrumbLink>
-                        </BreadcrumbItem>
-
-                        <BreadcrumbItem backgroundColor="#F41B94">
-                            <BreadcrumbLink href='#'>Projects</BreadcrumbLink>
-                        </BreadcrumbItem>
-
-                        <BreadcrumbItem backgroundColor="#F41B94">
-                            <BreadcrumbLink href='#'>Resume</BreadcrumbLink>
-                        </BreadcrumbItem>
-                    </Breadcrumb>
                     <Heading 
                     fontFamily="Rock Salt"
                     position="absolute" 
@@ -67,25 +44,12 @@ const Homepage = () => {
                     color="#DFFAF9"
                     textAlign="center"
                     textShadow="1px 1px 2px black, 0 0 10px #0E1A51, 0 0 0.2em #30A6F1"
-                    >Full-Stack Web Developer</Heading>
+                    className="animate__animated animate__zoomInDown">
+                    Full-Stack Web Developer</Heading>
                     </>
                 )}
             </VStack>
-            <Flex>
-                <Image
-                    width="250px"
-                    height="100vh"
-                    src="./images/backgroundimage.png"
-                    alt="colored dragon/koi fish art"
-                />
-                <Spacer />
-                <Image
-                    width="250px"
-                    height="100vh"
-                    src="./images/backgroundimage.png"
-                    alt="colored dragon/koi fish art"
-                />
-            </Flex>
+            <SideStyling />
         </Box>
     )
 }
